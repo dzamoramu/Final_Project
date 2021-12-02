@@ -3,20 +3,11 @@ const bodyParser = require('body-parser');
 
 const App = express();
 
-const Product = require('./routes/product');
-const User = require('./routes/user');
-const Auth = require('./routes/auth');
-
-const AuthToken = require('./middlewares/AuthToken');
-
-App.use(AuthToken);
+const Mascotas = require('./routes/mascotaRoutes');
 
 App.use(bodyParser.json());
 App.use(bodyParser.urlencoded({extended: false}));
 
-App.use('/product',Product);
-App.use('/user',User);
-App.use('/auth',Auth);
-
+App.use('/mascota',Mascotas);
 
 module.exports = App;
