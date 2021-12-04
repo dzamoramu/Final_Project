@@ -11,8 +11,12 @@
   "description": "",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "consolidate": "^0.16.0",
     "express": "^4.17.1",
+    "fixed": "^0.3.1",
     "mongoose": "^6.0.9",
+    "mustache": "^4.2.0",
+    "postgres": "^1.0.2",
     "redis": "^3.1.2"
   },
   "devDependencies": {
